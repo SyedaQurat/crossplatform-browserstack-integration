@@ -1,0 +1,29 @@
+# Set BrowserStack Credentials
+userName: #this should be your userName provided by BrowserStack
+accessKey: #this should be your accessKey provided by BrowserStack
+
+# BrowserStack Reporting
+projectName: demo-app
+buildName:  #add buildName, eg: browserstack-integration-build-1
+framework: testng
+source: testng:appium:v1.1
+app: #add .apk or .ip file
+
+
+# Platforms (Browsers / Devices to test)
+# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
+
+platforms:
+  - deviceName: Samsung Galaxy S24
+    osVersion: 14.0
+    platformName: android
+
+
+# Debugging features
+debug: true
+networkLogs: false
+consoleLogs: errors
+deviceLogs: true
+appiumLogs: true
+video: false
+testObservability: true
